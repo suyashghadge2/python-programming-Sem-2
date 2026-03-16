@@ -1,3 +1,9 @@
+# -- coding: utf-8 --
+"""
+Created on Mon Feb 16 04:51:56 2026
+
+@author: SUYASH
+"""
 copies = 3
 items = 5
 
