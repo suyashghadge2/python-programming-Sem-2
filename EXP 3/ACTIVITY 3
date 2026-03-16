@@ -1,15 +1,7 @@
-# -- coding: utf-8 --
-"""
-Created on Mon Feb 16 04:51:56 2026
+# Program to display multiplication tables from 1 to 10
 
-@author: SUYASH
-def simple_interest(principal, rate, time):
- si=(principal*rate*time)/100
- return si
-# Taking input from the user
-p = float(input("Enter principal amount: "))
-r = float(input("Enter rate of interest: "))
-t = float(input("Enter time (in years): "))
-# Function call
-interest = simple_interest(p, r, t)
-print("Simple Interest is:", interest)
+for num in range(1, 11):
+    print("Multiplication Table of", num)
+    for i in range(1, 11):
+        print(num, "x", i, "=", num * i)
+    print()   # Blank line for separation
