@@ -1,0 +1,34 @@
+# -- coding: utf-8 --
+"""
+Created on Mon Mar 23 10:32:34 2026
+
+@author:SUYASH GHADGE 
+"""
+file_name = "attendance.txt"
+
+with open(file_name, "w") as file:
+    file.write("Name,Date,Status\n")
+    file.write("Amit,2026-03-01,Present\n")
+    file.write("Sneha,2026-03-01,Absent\n")
+    file.write("Rahul,2026-03-01,Present\n")
+    file.write("Priya,2026-03-01,Present\n")
+
+print(f"Data written to {file_name} successfully.\n")
+
+print("Reading file content:")
+with open(file_name, "r") as file:
+    content = file.read()
+    print(content)
+
+with open(file_name, "a") as file:
+    file.write("Amit,2026-03-02,Present\n")
+    file.write("Sneha,2026-03-02,Present\n")
+
+print("After appending new records:")
+with open(file_name, "r") as file:
+    print(file.read())
+
+with open(file_name, "r") as file:
+    lines = file.readlines()
+
+print("Total attendance records:", len(lines) - 1)
